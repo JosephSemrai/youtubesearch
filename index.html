@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Extension</title>
+
+<script async="" src="./files/analytics.js.download"></script><script src="./files/ytembed.js.download"></script>
+<script> 
+<!--
+ 
+function updateField(){
+	var nada = '';
+ 
+	var code = '<sc'+ nada +'ript src="https://yvoschaap.com/ytpage/ytembed.js"></sc'+ nada +'ript>';
+	code += "\n";
+	//code += '<di'+ nada +'v id="ytPlayer"></div>\n';
+	code += '<di'+ nada +'v id="ytThumbs"><ins>Made with the <a href="https://yvoschaap.com/youtube.html?utm_source=generator">Youtube Embed Generator</a>.</ins></div>';
+	code += "\n";
+		
+	var string = '\'block\':\'ytThumbs\',';
+
+ 	string += '\'key\':\'your-youtube-developer-key\',';
+	var codeQ = document.getElementById('codeQ').value;
+	string += '\'q\':\''+codeQ+'\',';	
+	var codeType = document.getElementById('codeType').options[document.getElementById('codeType').selectedIndex].value;
+	string += '\'type\':\''+codeType+'\',';
+	var codeResults = document.getElementById('codeResults').options[document.getElementById('codeResults').selectedIndex].value;
+	string += '\'results\':'+codeResults+',';
+	//var codeOrder = document.getElementById('codeOrder').options[document.getElementById('codeOrder').selectedIndex].value;
+	//string += '\'order\':\''+codeOrder+'\',';
+	var codeMeta = document.getElementById('codeMeta').options[document.getElementById('codeMeta').selectedIndex].value;
+	string += '\'meta\':'+codeMeta+',';
+	var codePlayer = document.getElementById('codePlayer').options[document.getElementById('codePlayer').selectedIndex].value;
+	string += '\'player\':\''+codePlayer+'\',';
+	var codeLayout = document.getElementById('codeLayout').options[document.getElementById('codeLayout').selectedIndex].value;
+	string += '\'layout\':\''+codeLayout+'\'';
+	code += "\n";
+	code += '<sc'+ nada+'ript>';
+	code += "\n";
+	code += '	ytEmbed'+nada +'.init({'+string+'});';
+	code += "\n";
+	code += '</sc'+nada +'ript>';
+	
+	document.getElementById('codeResult').value = code;
+	
+	var execute = {'q': codeQ, 'type': codeType, 'results': codeResults, 'block': 'youtubeDivResults', 'meta': codeMeta, 'player': codePlayer, 'layout': codeLayout};
+	ytEmbed.init(execute);
+}
+//-->
+</script>
+<style>
+h1, h3 {
+    margin: 30px 0 10px 0;  
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #d8d8d8;
+    margin: 20px 0;
+}
+
+input {
+    margin: 5px 0;
+}
+/* needed for the thumbs to show correctly */
+.ytPlayer{
+	margin: auto;
+	text-align: center;
+}
+.ytlist {
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+
+/* float fix */
+.ytlist:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden
+}
+
+.ytlist li{
+	display: inline;
+	float: left;
+	margin: 5px; /* some space */
+}
+
+.ytlist table {
+	width: 100%;
+}
+
+.ytlist td{
+	padding: 5px; /* some space */
+	vertical-align: top;
+}
+
+.ytlist h3{
+	margin: 0;
+	line-height: 1.55em;
+}
+
+
+.ytlist a {
+	padding:0px;
+}
+/* hd */
+.clip span {
+	position: relative;
+	width: 288px;
+	overflow: hidden;
+}
+.clip img{
+	width: 288px;
+	display: block;
+
+}
+
+/* thumbs */
+.small .clip span {
+	position: relative;
+	width: 100px;
+	overflow: hidden;
+}
+.small .clip img{
+	width: 100px;
+	display: block;
+
+}
+
+/* for paging UL */
+#ytPage{
+	list-style: none inside;
+	margin: 0;
+	padding: 0;
+	height: 20px;
+}
+
+#ytPage .ytNext{
+	float: right; /* aligns to the right of ul */
+}
+
+#ytPage .ytPrev{
+	display: inline-block; /* blocks keeps our ul height */
+}
+
+/* generator css */
+input, select, textarea{
+	padding: 5px;
+	font-size: 1.1em;	
+}
+textarea {
+    padding: 10px;
+}
+</style>
+<script type="text/javascript" src="./files/search"></script><script type="text/javascript" src="./files/playlistItems"></script><script type="text/javascript" src="./files/channels"></script><script type="text/javascript" src="./files/videos"></script><script type="text/javascript" src="./files/playlistItems(1)"></script><script type="text/javascript" src="./files/search(1)"></script><script type="text/javascript" src="./files/videos(1)"></script><script type="text/javascript" src="./files/search(2)"></script><script type="text/javascript" src="./files/videos(2)"></script><script type="text/javascript" src="./files/search(3)"></script><script type="text/javascript" src="./files/videos(3)"></script><script type="text/javascript" src="./files/search(4)"></script><script type="text/javascript" src="./files/videos(4)"></script></head>
+<body>
+
+<h3>search youtube</h3>
+<form onsubmit="ytEmbed.init({&#39;block&#39;:&#39;youtubeDivSearch&#39;,&#39;type&#39;:&#39;search&#39;,&#39;q&#39;:document.getElementById(&#39;ytSearchField&#39;).value,&#39;results&#39;: 5,&#39;meta&#39;:true}); return false;" _lpchecked="1">
+  <input type="text" id="ytSearchField" placeholder="Search...">
+  <input type="submit" value="  Search  ">
+</form>
+<div id="youtubeDivSearch"><ul class="ytlist"><li><span>
+
+
+</span></td></div></td></tr></tbody></table></li></ul></div>
+<textarea cols="70" rows="6">    //scriptgenjust4ukai👍👍👍
+	&lt;script src=""&gt;&lt;/script&gt;
+    &lt;form onsubmit="ytEmbed.init({'block':'youtubeDivSearch','type':'search','q':document.getElementById('ytSearchField').value,'results': 5,'meta':true}); return false;"&gt;
+    &lt;input type="text" id="ytSearchField"&gt;  &lt;input type="submit" value="  Search   "&gt;
+    &lt;/form&gt;
+    &lt;div id="youtubeDivSearch"&gt;&lt;/div&gt;</textarea>
+
+<hr>
+
+
+</body></html>

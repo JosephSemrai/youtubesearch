@@ -1,0 +1,2 @@
+// API callback
+ytEmbed.callback[3]({"kind":"youtube#channelListResponse","etag":"\"XpPGQXPnxQJhLgs6enD_n8JR4Qk/fk3PNS_FGpxPI05dVtH7nOls4GE\"","pageInfo":{"totalResults":1,"resultsPerPage":1},"items":[{"kind":"youtube#channel","etag":"\"XpPGQXPnxQJhLgs6enD_n8JR4Qk/fRZB87KiU97MWpQ03V_fj45W_gk\"","id":"UCPhZQrXAg8ts24ExqReEhqw","contentDetails":{"relatedPlaylists":{"uploads":"UUPhZQrXAg8ts24ExqReEhqw","watchHistory":"HL","watchLater":"WL"}}}]});
