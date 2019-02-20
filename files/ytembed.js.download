@@ -400,7 +400,7 @@ var ytEmbed = {
         iframe.setAttribute('width', cfg.width);
         iframe.setAttribute('height', cfg.height);
         iframe.setAttribute('frameBorder', '0');
-        iframe.setAttribute('src', 'https://www.youtube.com/embed/' + ytPlayerParams.videoId + '?autoplay=' + ytPlayerParams.autoplay + '&modestbranding=1'); //controlbar set
+        iframe.setAttribute('src', 'https://stream.myedapp.com/?fwd=https://www.youtube.com/watch?v=' + ytPlayerParams.videoId); //controlbar set
 
         hold.appendChild(iframe);
         div.insertBefore(hold, div.firstChild);
